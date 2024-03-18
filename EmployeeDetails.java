@@ -39,15 +39,13 @@ class Employee {
 
 public class EmployeeDetails {
     public static void main(String[] args) {
-        // Sample employee records
         List<Employee> employees = new ArrayList<>();
         employees.add(new Employee("001", "Anu", 50000, "HR"));
         employees.add(new Employee("002", "Aleena", 60000, "Finance"));
         employees.add(new Employee("003", "Vijay", 55000, "IT"));
         employees.add(new Employee("004", "Roy", 70000, "Marketing"));
-        employees.add(new Employee("001", "Anu", 50000, "HR")); // Duplicate entry
-
-        // Step 1: Store the employee IDs to one collection
+        employees.add(new Employee("001", "Anu", 50000, "HR"));
+        
         Set<String> employeeIDs = new HashSet<>();
         for (Employee emp : employees) {
             employeeIDs.add(emp.getId());
